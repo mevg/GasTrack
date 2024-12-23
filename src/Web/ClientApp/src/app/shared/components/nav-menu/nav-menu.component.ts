@@ -1,4 +1,4 @@
-import { NgIf, NgClass } from '@angular/common';
+import { NgIf, NgClass, CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
@@ -7,7 +7,7 @@ import { RouterModule } from '@angular/router';
   templateUrl: './nav-menu.component.html',
   styleUrls: ['./nav-menu.component.scss'],
   standalone: true,
-  imports: [NgIf, NgClass, RouterModule]
+  imports: [NgIf, NgClass, RouterModule, CommonModule]
 })
 export class NavMenuComponent {
   isExpanded = false;
